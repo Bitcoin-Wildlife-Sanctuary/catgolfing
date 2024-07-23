@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: "streamer";
+  src: url("/Streamer Demo.otf");
+}
+@font-face {
+  font-family: "criteriacf";
+  src: url("/Fontspring-DEMO-criteriacf-bold.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "pixeloid";
+  src: url("/PixeloidSans.ttf");
+}
+@tailwind utilities;
+
+.navigation .active {
+  color: #ffd644;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
